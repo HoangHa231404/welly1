@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_time_sheet_time_sheet,model_time_sheet,time_sheet.model_time_sheet,base.group_user,1,1,1,1
+camera_wizard_time_sheet,model_camera_wizard_time_sheet,time_sheet.model_camera_wizard,base.group_user,1,1,1,1
+partner_time_sheet,model_partner_time_sheet,time_sheet.model_res_partner_photo,base.group_user,1,1,1,1
+face_recognition_time_sheet,model_face_recognition_time_sheet,time_sheet.model_face_recognition_service,base.group_user,1,1,1,1
+access_face_recognition_service,model_face_recognition_service,time_sheet.model_face_recognition_service,base.group_user,1,1,1,1

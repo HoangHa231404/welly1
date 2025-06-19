@@ -1,0 +1,10 @@
+<!-- trong views/assets.xml -->
+<odoo>
+    <template id="assets_backend" name="camera assets" inherit_id="web.assets_backend_legacy_lazy">
+      <xpath expr="." position="inside">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+        <script type="text/javascript" src="/time_sheet/static/src/js/camera.js"></script>
+      </xpath>
+    </template>
+</odoo>
+  

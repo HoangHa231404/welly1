@@ -1,0 +1,9 @@
+<odoo>
+    <template id="camera_template" name="Camera Template">
+        <div>
+            <button id="start-camera-button">Bật Camera</button>
+            <video id="camera-video" autoplay=""></video>
+            <button id="capture-button">Chụp Ảnh</button>
+        </div>
+    </template>
+</odoo>

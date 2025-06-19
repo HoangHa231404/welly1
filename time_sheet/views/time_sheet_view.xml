@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+    <record id="view_time_sheet_tree" model="ir.ui.view">
+      <field name="name">time.sheet.tree</field>
+      <field name="model">time.sheet</field>
+      <field name="arch" type="xml">
+        <tree string="Time Sheet">
+          <field name="partner_id" />
+          <field name="time_in" />
+          <field name="time_out" />
+          <field name="date" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_time_sheet_form" model="ir.ui.view">
+      <field name="name">time.sheet.form</field>
+      <field name="model">time.sheet</field>
+      <field name="arch" type="xml">
+        <form string="Time Sheet">
+          <sheet>
+            <group>
+              <field name="partner_id" />
+              <field name="time_in" />
+              <field name="time_out" />
+              <field name="date" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_time_sheet" model="ir.actions.act_window">
+      <field name="name">Time Sheets</field>
+      <field name="res_model">time.sheet</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_time_sheet"
+      name="Time Sheets"
+      action="action_time_sheet" 
+      sequence="10"/>
+      
+  </data>
+</odoo>
